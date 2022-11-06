@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int l,p, pomocnicza;
+    printf("Podaj liczbe linii i liczbe par, która ma wystepować:");
+    scanf("%d %d",&l, &p);
+    pomocnicza = p;
+    for(l;l>0;l--){
+        p = pomocnicza;
+        if(l%2==1){
+            for(p; p>0; p--){
+                printf("#*");
+            }
+            printf("\n");
+        }
+        else{
+            for(p; p>0; p--){
+                printf("*#");
+            }
+            printf("\n");
+        }
+    }
+    
+
+    return 0;
+}
